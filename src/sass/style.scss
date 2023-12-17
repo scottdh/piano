@@ -14,10 +14,6 @@
 /* Pages */
 @use "./home";
 
-body {
-  background-color: var(--color-z0);
-}
-
 :focus {
   outline: 2px dashed var(--color-primary);
   outline-offset: 0.25rem;

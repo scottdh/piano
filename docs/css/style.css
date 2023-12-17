@@ -939,7 +939,144 @@ h5,
 /* Components */
 /* Pages */
 body {
-  background-color: var(--color-z0);
+  margin: 0;
+  padding: 0;
+  background: var(--color-z0);
+}
+
+.title {
+  text-align: center;
+}
+
+.superscript {
+  font-size: 0.5em;
+  margin-block-end: 1em;
+}
+
+.piano {
+  display: flex;
+  justify-content: center;
+  gap: 0.2em;
+}
+
+.piano-keys {
+  background-color: var(--color-text-primary);
+  padding: 0 0.25em 0.25em 0.25em;
+  border-radius: 0 0 0.25em 0.25em;
+}
+
+.key {
+  display: inline-flex;
+  position: relative;
+  justify-items: center;
+  align-items: end;
+  min-height: 12em;
+  border-radius: 0 0 0.25em 0.25em;
+  padding-inline: 1em;
+  padding-block-end: 0.5em;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 81%, rgb(237, 237, 237) 100%);
+  color: #141c3a;
+  cursor: pointer;
+  border-bottom: 3px solid lightgray;
+}
+.key:hover {
+  background: palegoldenrod;
+}
+
+.black-key {
+  min-width: 2em;
+  padding-block-end: 0.5em;
+  text-align: center;
+  background-color: var(--color-text-primary);
+  border-radius: 0 0 0.25em 0.25em;
+  color: white;
+  position: absolute;
+  margin-left: 0.75em;
+  z-index: 100;
+  top: 0;
+  border-bottom: 3px solid gray;
+}
+
+.keynote {
+  display: inline-block;
+  color: pink;
+}
+
+.black-keynote {
+  display: inline-flex;
+  justify-items: center;
+  align-items: end;
+  min-height: 6em;
+}
+
+#lyrics {
+  display: block;
+  margin-inline: auto;
+  padding-left: 20px;
+  background-color: #fd4d3f;
+}
+
+#column-one,
+#column-two,
+#column-three,
+#column-four,
+#column-five,
+#column-six,
+#column-optional {
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#column-optional {
+  display: none;
+}
+
+#word-one,
+#word-two,
+#word-three,
+#word-four,
+#word-five,
+#word-six,
+#word-optional {
+  background-color: white;
+  width: 90px;
+  height: 25px;
+  padding-top: 10px;
+  letter-spacing: 5px;
+  color: #141c3a;
+}
+
+#letter-note-one,
+#letter-note-two,
+#letter-note-three,
+#letter-note-four,
+#letter-note-five,
+#letter-note-six,
+#letter-note-optional {
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 35px;
+}
+
+#first-next-line,
+#second-next-line,
+#third-next-line,
+#fourth-next-line {
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 10px;
+  border: none;
+  background-color: #ffc63f;
+  color: #141c3a;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 :focus {

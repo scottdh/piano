@@ -3,51 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./main.js" defer></script>
   </head>
 
-  <body>
-    <p class="title">Piano Player</p>
-    <p id="demo">Follow the song below to play the piano.</p>
+  <body class="flow">
+    <section class="title">
+      <h1>Piano Player</h1>
+      <p>Follow the song below to play the piano.</p>
+    </section>
+
     <section class="piano">
-      <section id="c-key" class="key">
-        <section class="keynote">C</section>
-      </section>
-      <section id="c-sharp-key" class="black-key">
-        <section class="black-keynote">C#</section>
-      </section>
-      <section id="d-key" class="key">
-        <section class="keynote">D</section>
-      </section>
-      <section id="d-sharp-key" class="black-key">
-        <section class="black-keynote">D#</section>
-      </section>
-      <section id="e-key" class="key">
-        <section class="keynote">E</section>
-      </section>
-      <section id="f-key" class="key">
-        <section class="keynote">F</section>
-      </section>
-      <section id="f-sharp-key" class="black-key">
-        <section class="black-keynote">F#</section>
-      </section>
-      <section id="g-key" class="key">
-        <section class="keynote">G</section>
-      </section>
-      <section id="g-sharp-key" class="black-key">
-        <section class="black-keynote">G#</section>
-      </section>
-      <section id="a-key" class="key">
-        <section class="keynote">A</section>
-      </section>
-      <section id="a-sharp-key" class="black-key">
-        <section class="black-keynote">A#</section>
-      </section>
-      <section id="b-key" class="key">
-        <section class="keynote">B</section>
-      </section>
-      <section id="high-c-key" class="key">
-        <div class="keynote">C</div>
-      </section>
+      <div class="piano-keys">
+        <section id="c-key" class="key">
+          <section class="keynote">C</section>
+          <section id="c-sharp-key" class="black-key">
+            <section class="black-keynote">
+              C<span class="superscript">#</span>
+            </section>
+          </section>
+        </section>
+
+        <section id="d-key" class="key">
+          <section class="keynote">D</section>
+          <section id="d-sharp-key" class="black-key">
+            <section class="black-keynote">
+              D<span class="superscript">#</span>
+            </section>
+          </section>
+        </section>
+
+        <section id="e-key" class="key">
+          <section class="keynote">E</section>
+        </section>
+        <section id="f-key" class="key">
+          <section class="keynote">F</section>
+          <section id="f-sharp-key" class="black-key">
+            <section class="black-keynote">
+              F<span class="superscript">#</span>
+            </section>
+          </section>
+        </section>
+
+        <section id="g-key" class="key">
+          <section class="keynote">G</section>
+          <section id="g-sharp-key" class="black-key">
+            <section class="black-keynote">
+              G<span class="superscript">#</span>
+            </section>
+          </section>
+        </section>
+
+        <section id="a-key" class="key">
+          <section class="keynote">A</section>
+          <section id="a-sharp-key" class="black-key">
+            <section class="black-keynote">
+              A<span class="superscript">#</span>
+            </section>
+          </section>
+        </section>
+
+        <section id="b-key" class="key">
+          <section class="keynote">B</section>
+        </section>
+        <section id="high-c-key" class="key">
+          <div class="keynote">C</div>
+        </section>
+      </div>
     </section>
 
     <section id="lyrics">

@@ -3,78 +3,78 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: #ffc63f;
+  background: var(--color-z0);
 }
+
 .title {
-  font-size: 36px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  padding: 0;
-  color: #141c3a;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   text-align: center;
 }
-#demo {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 15px;
-  color: #141c3a;
-  letter-spacing: 1px;
-  font-style: italic;
+
+.superscript {
+  font-size: 0.5em;
+  margin-block-end: 1em;
 }
 .piano {
-  width: 305px;
-  height: 210px;
-  display: block;
-  margin: 0 auto;
-  background-color: #fd4d3f;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 0.2em;
 }
+
+.piano-keys {
+  background-color: var(--color-text-primary);
+  padding: 0 0.25em 0.25em 0.25em;
+  border-radius: 0 0 0.25em 0.25em;
+}
+
 .key {
-  width: 30px;
-  height: 200px;
-  display: inline-block;
-  border: solid #141c3a 2px;
-  box-shadow: 2px 5px;
-  background-color: white;
+  display: inline-flex;
+  position: relative;
+  justify-items: center;
+  align-items: end;
+  min-height: 12em;
+  border-radius: 0 0 0.25em 0.25em;
+  padding-inline: 1em;
+  padding-block-end: 0.5em;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 81%,
+    rgba(237, 237, 237, 1) 100%
+  );
   color: #141c3a;
+  cursor: pointer;
+  border-bottom: 3px solid lightgray;
+  &:hover {
+    background: palegoldenrod;
+  }
 }
 .black-key {
-  width: 25px;
-  height: 100px;
-  display: inline-block;
-  background-color: #141c3a;
+  min-width: 2em;
+  padding-block-end: 0.5em;
+  text-align: center;
+  background-color: var(--color-text-primary);
+  border-radius: 0 0 0.25em 0.25em;
   color: white;
   position: absolute;
-  margin-left: -12px;
-  padding: 0px;
+  margin-left: 0.75em;
+  z-index: 100;
+  top: 0;
+  border-bottom: 3px solid gray;
 }
 .keynote {
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  margin-top: 175px;
-  color: #141c3a;
+  display: inline-block;
+  color: pink;
 }
 .black-keynote {
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  margin-top: 75px;
+  display: inline-flex;
+  justify-items: center;
+  align-items: end;
+  min-height: 6em;
 }
+
 #lyrics {
-  width: 400px;
-  height: 240px;
   display: block;
-  margin: 0 auto;
+  margin-inline: auto;
   padding-left: 20px;
-  margin-top: 50px;
   background-color: #fd4d3f;
 }
 #column-one,
